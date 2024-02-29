@@ -1,0 +1,99 @@
+.singlePost {
+    flex: 9;
+
+    .singlePostWrapper {
+        padding: 20px;
+        padding-right: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .singlePostImg {
+        width: 100%;
+        height: 500px;
+        border-radius: 5px;
+        object-fit: cover;
+    }
+
+    .singlePostTitle {
+        text-align: center;
+        margin: 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 28px;
+    }
+
+    .singlePostTitleInput {
+        margin: 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 28px;
+        text-align: center;
+        border: none;
+        border-bottom: 1px solid lightgray;
+        color: gray;
+
+        &:focus{
+            outline: none;
+        }
+    }
+
+    .singlePostIcon {
+        font-size: 20px;
+        float: right;
+        margin-left: 10px;
+        cursor: pointer;
+        &:hover {
+            color: aquamarine;
+        }
+        &:first-child{
+            color: tomato;
+        }
+        &:last-child{
+            color: teal;
+        }
+
+    }
+
+    .singlePostInfo {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+        color: #b39656;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .singlePostDesc {
+        color: #666;
+        font-size: 20px;
+        line-height: 30px;
+
+        &::first-letter {
+            margin-left: 29px;
+            font-size: 30px;
+            font-weight: 600;
+        }
+    }
+
+    .singlePostDescInput{
+        border: none;
+        color: #666;
+        line-height: 25px;
+        font-size: 18px;
+
+        &:focus{
+            outline: none;
+        }
+    }
+
+    .singlePostButton {
+        border: none;
+        background-color: coral;
+        padding: 6px;
+        width: 100px;
+        color: #fff;
+        border-radius: 4px;
+        cursor: pointer;
+        align-self: flex-end;
+        margin-top: 25px;
+    }
+}
